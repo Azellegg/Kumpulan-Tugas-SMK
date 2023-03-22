@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Faction yang dibangun JavaScript</title>
+</head>
+<body>
+     <script>
+          // Using the split() command
+          let string = "William, azellegg!";
+          let splitted = string.split(",");
+          console.log("Yay, we managed to break this sentence into several pieces:");
+          console.log(splitted); // Output: ["William", " azellegg!"]
+
+          // Using the slice() command
+          let sliced = string.slice(0, 5);
+          console.log("Now, let's cut this sentence to get its first word:");
+          console.log(sliced); // Output: "William"
+
+          // Using the charAt() command
+          let char = string.charAt(1);
+          console.log("Let's take the second letter from this sentence now:");
+          console.log(char); // Output: "e"
+
+          // Using the match() command
+          let matched = string.match(/o/g);
+          console.log("Let's find all the 'o' letters in this sentence now:");
+          console.log(matched); // Output: ["o", "o"]
+
+          // Using the search() command
+          let index = string.search("azellegg");
+          console.log("Let's find the position of the word 'azellegg' in this sentence now:");
+          console.log(index); // Output: 7
+
+          // Using the toString() command
+          let number = 42;
+          let stringNumber = number.toString();
+          console.log("Now, let's change this number into a text:");
+          console.log(stringNumber); // Output: "42"
+
+          // Using the getDate() command
+          let date = new Date();
+          let day = date.getDate();
+          console.log("What date is it today?");
+          console.log(day); // Output: Current day of the month
+
+          // Using the getMonth() command
+          let month = date.getMonth();
+          console.log("What month is it now?");
+          console.log(month); // Output: Current month (0-11)
+
+          // Using the getFullYear() command
+          let year = date.getFullYear();
+          console.log("What year is it now?");
+          console.log(year); // Output: Current year
+
+          // Using the setTime() command
+          let newTime = date.setTime(1616040000000); // March 18, 2021
+          console.log("Now, let's set the time to March 18, 2021:");
+          console.log(newTime); // Output: Timestamp of the new time
+     </script>
+</body>
+</html>

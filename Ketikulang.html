@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Program Perulangan</title>
+</head>
+<body>
+<div id="keterangan"></div>
+<script>
+let bilangan;
+let faktor = 0;
+let sisabagi;
+let hasilcek;
+bilangan = prompt("Isikan Bilangan");
+for (let i = 1; i <= bilangan; i++){
+     sisabagi = bilangan % i;
+     {
+          if (sisabagi == 0) 
+     faktor = faktor + 1;
+     }
+}
+if (faktor == 2) {
+hasilcek = "bilangan Prima";
+} else {
+hasilcek = "bukan bilangan prima";
+}
+document.getElementById("keterangan").innerHTML = bilangan + " adalah " + hasilcek;
+</script>
+</body>
+</html>

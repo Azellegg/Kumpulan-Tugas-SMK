@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>William Menghitung Luas Segitiga</h2>
+
+<p>Masukkan alas dan tinggi dibawah ini:</p>
+
+<p>Alas: <input type="text" id="txtAlas" value="0"></p>
+<p>Tinggi: <input type="text" id="txtTinggi" value="0"></p>
+<button onclick="hitungLuas()">Hitung Luas</button>
+
+<p>Luas: <span id="spanLuas">0</span></p>
+
+<script>
+function hitungLuas() {
+  var a = document.getElementById("txtAlas").value;
+  var t = document.getElementById("txtTinggi").value;
+  var luas = 0.5 * a * t;
+  document.getElementById("spanLuas").innerHTML = luas;
+}
+</script>
+
+</body>
+</html>

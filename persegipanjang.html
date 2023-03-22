@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>William Menghitung Luas Persegi Panjang</h2>
+
+<p>Masukkan panjang dan lebar dibawah ini:</p>
+
+<p>Panjang: <input type="text" id="txtPanjang" value="0"></p>
+<p>Lebar: <input type="text" id="txtLebar" value="0"></p>
+<button onclick="hitungLuas()">Hitung Luas</button>
+
+<p>Luas: <span id="spanLuas">0</span></p>
+
+<script>
+function hitungLuas() {
+  var p = document.getElementById("txtPanjang").value;
+  var l = document.getElementById("txtLebar").value;
+  var luas = p * l;
+  document.getElementById("spanLuas").innerHTML = luas;
+}
+</script>
+
+</body>
+</html>

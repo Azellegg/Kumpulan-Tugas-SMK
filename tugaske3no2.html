@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Tugas Nomer 2</title>
+</head>
+<body>
+     <script>
+          // Pembukaan
+          alert(`Welcome to Perbandingan Tinggi Badan`)
+          
+          // Masukan Nama
+          const namestudent1 = prompt (`Masukan nama siswa pertama`)
+          const namestudent2 = prompt (`Masukan nama siswa kedua`)
+          const namestudent3 = prompt (`Masukan nama siswa ketiga`)
+
+          // Masukan Tingggi Badan
+          const heightstudent1 = parseInt(prompt (`Masukan tinggi siswa pertama ${namestudent1}!`));
+          const heightstudent2 = parseInt(prompt (`Masukan tinggi siswa kedua ${namestudent2}!`));
+          const heightstudent3 = parseInt(prompt (`Masukan tinggi siswa ketiga ${namestudent3}!`));
+
+          // Kondisi
+          if ( heightstudent1 >= heightstudent2 && heightstudent1 >= heightstudent3) {
+               document.writeln (`Tinggi ${namestudent1} lebih Tinggi di antara 3 siswa <br>`);
+               if ( heightstudent2 >= heightstudent3) {
+                    document.writeln (`Tinggi badan ${namestudent3} Mendapatkan urutan ke 2 <br>`);
+                    document.writeln (`Tinggi badan ${namestudent2} Mendapatkan urutan ke 3`);
+               } else {
+                    document.writeln (`Tinggi badan ${namestudent2} Mendapatkan urutan ke 2 <br>`);
+                    document.writeln (`Tinggi badan ${namestudent3} Mendapatkan urutan ke 3`);
+               }
+          } else if ( heightstudent2 >= heightstudent1 && heightstudent2 >= heightstudent3) {
+               document.writeln (`Tinggi ${namestudent2} lebih tinggi di antara 3 siswa <br>`);
+               if ( heightstudent1 >= heightstudent3 ) {
+                    document.writeln (`Tinggi badan ${namestudent1} mendapatkan urutan ke 2 <br>`);
+                    document.writeln (`Tinggi badan ${namestudent3} mendapatkan urutan ke 3`);
+               } else {
+                    document.writeln (`Tinggi badan ${namestudent3} mendapatkan urutan ke 2 <br>`);
+                    document.writeln (`Tinggi badan ${namestudent1} mendapatkan urutan ke 3`);
+               }
+          } else if ( heightstudent3 >= heightstudent2 && heightstudent3 >= heightstudent1) {
+               document.writeln (`Tinggi ${namestudent3} lebih tinggi di antara 3 siswa <br>`);
+               if ( heightstudent2 >= heightstudent1 ) {
+                    document.writeln (`Tinggi badan ${namestudent2} mendapatkan urutan ke 2 <br>`);
+                    document.writeln (`Tinggi badan ${namestudent1} mendapatkan urutan ke 3`);
+               } else {
+                    document.writeln (`Tinggi badan ${namestudent1} mendapatkan urutan ke 2 <br>`);
+                    document.writeln (`Tinggi badan ${namestudent2} mendapatkan urutan ke 3`);
+               }
+          }
+     </script>
+</body>
+</html>
